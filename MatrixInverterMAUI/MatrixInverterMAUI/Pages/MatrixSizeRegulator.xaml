@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatrixInverterMAUI.MatrixSizeRegulator">
+    <VerticalStackLayout Margin="25"
+                        Spacing="25">
+        <Label 
+            Text="Введите размерность матрицы:"
+            HorizontalOptions="Center"
+            x:Name="Guide"/>
+        <Entry 
+            Placeholder="1" 
+            x:Name="Size"
+            MaximumHeightRequest="50" 
+            MaximumWidthRequest="50"
+            HorizontalOptions="CenterAndExpand"
+            Keyboard="Numeric"/>
+        <Button Text="Перейти к вводу матрицы" 
+                x:Name="RefBtn"
+                Clicked="RefBtn_Clicked"
+                MaximumWidthRequest="225"/>
+    </VerticalStackLayout>
+</ContentPage>

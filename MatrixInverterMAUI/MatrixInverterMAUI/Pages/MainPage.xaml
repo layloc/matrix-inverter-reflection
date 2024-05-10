@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatrixInverterMAUI.MatrixInverter">
+    <VerticalStackLayout 
+        Margin="25" 
+        Spacing="25"
+        x:Name="MainStack">
+        <Label 
+            x:Name="Guide"
+            Text="Введите путь к сборке:"
+            HorizontalOptions="Center"
+            FontSize="25"/>
+        <Entry 
+            x:Name="Path"
+            Placeholder="Введите путь до файла .dll" 
+            WidthRequest="500"
+            VerticalOptions="Center">
+        </Entry>
+        <Button 
+            x:Name="CheckerBtn"
+            Text="Проверить контракт" 
+            Clicked="CheckerBtn_OnClicked"
+            WidthRequest="200"
+            Margin="0,0,0,200"/>
+    </VerticalStackLayout>
+</ContentPage>
